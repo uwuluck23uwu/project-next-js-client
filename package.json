@@ -1,0 +1,42 @@
+{
+  "name": "project-next-js-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "postbuild": "copyfiles -u 1 \"out/**/*\" \"../project-nextjs-api/ProjectNextJs/wwwroot\"",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "@reduxjs/toolkit": "^2.8.1",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.10.5",
+    "jwt-decode": "^4.0.0",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.509.0",
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-lottie-player": "^2.1.0",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.6",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6",
+    "typescript": "^5"
+  }
+}

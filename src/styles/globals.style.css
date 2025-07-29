@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Color Palette */
+:root {
+  /* Primary Colors */
+  --color-primary: #5b4533;
+  --color-secondary: #a07451;
+
+  /* Accent Colors */
+  --color-accent-gold: #d4af37;
+  --color-accent-green: #b8860b;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-platinum: #d3c4b7;
+
+  /* Text Colors */
+  --color-text-primary: #3e2e21;
+  --color-text-secondary: #6b4f3a;
+
+  /* Background Colors */
+  --color-background-main: #efe7dc;
+  --color-background-alt: #f8f4ed;
+}
+
+body {
+  background-color: var(--color-background-main);
+  color: var(--color-text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: var(--color-accent-gold);
+  color: var(--color-white);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: var(--color-accent-green);
+}
